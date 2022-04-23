@@ -39,7 +39,7 @@ module.exports = {
           'chapter2/12_前后台交互ajax',
           'chapter2/13_使用vuex管理状态',
           'chapter2/14_异步显示分类列表 TypeNav',
-          'chapter2/15_Mock(模拟)数据接口',
+          'chapter2/15_Mock数据接口',
           'chapter2/16_利用Mock接口实现动态的Home',
           'chapter2/17_Search路由',
           'chapter2/18_Detail路由',

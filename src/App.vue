@@ -1,28 +1,28 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+   <Header/>
+   <router-view></router-view>
+   <Footer v-if="!$route.meta.isHaddren"/>
+   
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+   Footer,
+   Header
+  },
+  mounted(){
+    this.$store.dispatch("getCategoryList");
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
